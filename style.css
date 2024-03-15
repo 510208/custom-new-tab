@@ -1,0 +1,202 @@
+/* 定義常數 */
+:root {
+    --bg: -webkit-linear-gradient(#dfdfdf, #b5cab7);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: '微軟正黑體', sans-serif;
+    background-color: #f5f5f5;
+    /* 背景填滿致中 */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    /* 內部物件垂直排列 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    /* 背景半透明 */
+    background-color: rgba(66, 66, 66, 0.5);
+}
+
+.clock {
+    text-align: center;
+}
+
+.time {
+    font-size: 5em;
+    /* color: #333; */
+}
+
+.date {
+    font-size: 2em;
+    /* color: #666; */
+}
+
+.search {
+    margin-top: 20px;
+}
+
+input#search {
+    width: 30vw;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 25px;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+}
+
+input#submit {
+    width: 5vw;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 25px;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+}
+
+input:focus {
+    outline: none;
+}
+
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.boldfont {
+    font-weight: bold;
+}
+
+.divider-MH {
+    font-weight: bold;
+}
+
+.quotes {
+    font-size: 1em;
+    color: #d3d3d3;
+    margin-top: 20px;
+}
+
+#time {
+    /* 讓此container裡的文字呈現漸層填滿 */
+    background: var(--bg);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5em;
+    color: #333;
+}
+
+#date {
+    /* 讓此container裡的文字呈現漸層填滿 */
+    background: var(--bg);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5em;
+    color: #666;
+}
+
+#quote::before {
+    content: open-quote;
+}
+
+#quote::after {
+    content: close-quote;
+}
+
+.weather {
+    /* 內部物件由左至右排列，水平置中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /* 背景設定 */
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 25px;
+    padding: 10px;
+    width: 37vw;
+}
+
+.weather-info {
+    /* 內部物件由左至右排列，水平置中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#bottomContainer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* 控制隐藏时的高度 */
+    background-color: #bcbcbca1; /* 设置底部容器的背景色 */
+    overflow: hidden;
+    transition: height 0.3s ease-in-out; /* 添加过渡效果 */
+    border-radius: 25px 25px 0 0;
+}
+
+#bottomContainer:hover {
+    height: 200px; /* 控制显示时的高度 */
+}
+
+#bottomTitle {
+    /* cursor: pointer; */
+    text-align: center;
+    line-height: 50px; /* 控制标题栏的高度 */
+    background-color: transparent; /* 设置标题栏的背景色 */
+}
+
+.linkContainer {
+    text-align: center;
+}
+
+.linkItem {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+}
+
+.linkItem img {
+    width: 50px; /* 设置图标的宽度 */
+    height: 50px; /* 设置图标的高度 */
+}
+
+.linkItem a {
+    text-decoration: none; /* 去除链接的下划线 */
+    color: #000000; /* 设置链接的颜色 */
+    display: block; /* 使链接占据整个容器的空间 */
+    transition: background-color 0.3s ease; /* 添加背景色过渡效果 */
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.linkItem a:hover {
+    background-color: #f0f0f0; /* 设置悬停时的背景色 */
+}
+
+.widget {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /* 背景設定 */
+    background-color: rgba(255, 255, 255);
+    border-radius: 25px;
+    padding: 10px;
+    width: 37vw;
+}
+
+.padding-item {
+    background-color: transparent;
+    height: 5vh;
+}

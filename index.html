@@ -1,0 +1,103 @@
+<!-- 自行設計一款Chrome新分頁 -->
+<!DOCTYPE html>
+<html lang="zh-tw">
+    <head>
+        <meta charset="UTF-8">
+        <title>新的分頁</title>
+        <!-- JQUREY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+        <!-- Google的LOGO路徑：/img/gogole.svg -->
+    </head>
+    <body>
+        <div class="container">
+            <!-- 空白間隔 -->
+            <div class="padding-item">   </div>
+            <div class="clock">
+                <div class="time" id="time">
+                    <span id="hour" class="boldfont">00</span>
+                    <span class="divider-MH">:</span>
+                    <span id="minute" class="boldfont">00</span>
+                    <span class="divider-MH">:</span>
+                    <span id="second" class="boldfont">00</span>
+                </div>
+                <div class="date" id="date">
+                    <span id="year" class="boldfont">00</span>
+                    <span class="divider-Slash">/</span>
+                    <span id="month" class="boldfont">00</span>
+                    <span class="divider-Slash">/</span>
+                    <span id="day" class="boldfont">00</span>
+                </div>
+                <div id="quotes" class="quotes">
+                    <p id="quote" class="quote">Quote</p>
+                </div>
+            </div>
+            <div class="search">
+                <form action="https://www.google.com/search" method="get">
+                    <!-- <img src="img/google.svg" alt="Google" id="google"> -->
+                    <input type="text" name="q" id="search" placeholder="Google 搜尋">
+                    <input type="submit" id="submit" value="搜">
+                </form>
+            </div>
+            <div class="weather">
+                <!-- <div class="weather-info"> -->
+                    <!-- <div class="weather-icon" id="weather-icon">
+                        <img src="" alt="weather" id="weatherimg" height="50px">
+                    </div>
+                    <div class="weather-location" id="weather-location">
+                        <span id="weather" class="boldfont"></span>
+                    </div>
+                    <div class="weather-temp" id="weather-temp">
+                        <span id="temp" class="boldfont">00</span>
+                        <span class="degree">°C</span>
+                    </div> -->
+                    <div id="ww_b5a39840494c7" v='1.3' loc='id' a='{"t":"horizontal","lang":"zh-Hant","sl_lpl":1,"ids":["wl9233"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#FFFFFF00","cl_font":"#000000","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","el_nme":3}'>
+                        <a href="https://weatherwidget.org/" id="ww_b5a39840494c7_u" target="_blank">Free weather widget for website</a>
+                    </div>
+                    <script async src="https://app2.weatherwidget.org/js/?id=ww_b5a39840494c7"></script>
+                <!-- </div> -->
+            </div>
+            <div class="widget">
+                <img src="https://camo.githubusercontent.com/b191c58013325b09552fd0b110a2c9f6a36c360990ce289ef5537bd03b433f0c/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d3531303230382673686f775f69636f6e733d7472756526636f756e745f707269766174653d7472756526686964655f626f726465723d74727565">
+            </div>
+            <div class="widget">
+                <img src="https://camo.githubusercontent.com/1cca756319a5ead2d6e7124e49f08f0f4ed44b25a150cda5a409105b24c073c2/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67732f3f757365726e616d653d35313032303826686964655f626f726465723d74727565266c61796f75743d636f6d70616374">
+            </div>
+            <div class="padding-item">   </div>
+            <div id="bottomContainer">
+                <div id="bottomTitle"><i class="fa-solid fa-angle-up"></i>常用網站</div>
+                <div class="linkContainer">
+                    <div class="linkItem">
+                        <a href="https://www.facebook.com">
+                            <img src="/img/facebook.png" alt="Facebook">
+                            <!-- <span>Facebook</span> -->
+                        </a>
+                    </div>
+                    <div class="linkItem">
+                        <a href="https://www.youtube.com">
+                            <img src="/img/youtube.png" alt="YouTube">
+                            <!-- <span>YouTube</span> -->
+                        </a>
+                    </div>
+                    <div class="linkItem">
+                        <a href="https://www.github.com/510208">
+                            <img src="/img/github.png" alt="GitHub">
+                            <!-- <span>网站2</span> -->
+                        </a>
+                    </div>
+                    <div class="linkItem">
+                        <a href="https://www.minecraft.net/zh-hant">
+                            <img src="/img/microsoft.png" alt="Minecraft">
+                            <!-- <span>网站2</span> -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+    </body>
+</html>
